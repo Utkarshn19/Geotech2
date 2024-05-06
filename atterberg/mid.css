@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: #6b3260;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+.navcont{
+    max-width: 80vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* overflow: hidden; */
+}
+nav .logo img{
+    height: 50px;
+    padding: 5px 10px;
+}
+nav .logo{
+    display: flex;
+    align-items: center;
+    font-family:Arial, Helvetica, sans-serif ;
+    
+}
+nav .logo .insti .dept{
+    text-align: center;
+    
+}
+nav .logo .insti .dept a{
+    border-bottom:2px solid #17a2b8;
+    color: white;
+    text-decoration: none;
+}
+nav .logo .insti .insti_name{
+    color: #ffff00;
+    padding-top: 4px;
+}
+.exp{
+    display: flex;
+    align-items: center;
+}
+.exp .home{
+    text-decoration: none;
+    color: white;
+    padding: 21px;
+    font-family: Open Sans, Arial, sans-serif;
+    font-size: 14px;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+    height: 100%;
+}
+.dropbtn {
+    color: white;
+    background-color: inherit;
+    border: none;
+    padding: 25px 0px;
+    cursor: pointer;
+    font-size: 14px;
+    height: 100%;
+    display: flex;
+    font-family: Open Sans, Arial, sans-serif;
+}
+.dropbtn .icon-chevron-bottom{
+    height: 17px;
+    padding-left: 3px;
+    fill: white;
+    
+}
+.drop-cont{
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #ffffffed;
+    width: 250px;
+    padding: 10px 0px;
+    border-top: 3px solid #4b203b;
+    align-items: center;
+    justify-content: center;
+}
+.drop-cont a{
+    color: #5a5959;
+    font-weight: 500;
+    font-size: 15px;
+    display: block;
+    text-decoration: none;
+    font-family: Open Sans, Arial, sans-serif;
+    padding: 15px;
+}
+.dropdown:hover .drop-cont{
+    display: block;
+    position: absolute;
+    right: 0%;    
+    animation: fade ease 0.3s;
+}
+.dropdown:hover .dropbtn{
+    color: rgb(227, 227, 227);
+}
+.drop-cont a:hover {
+    background-color: rgb(244, 244, 244);
+    color: #484747;
+}
+.dropdown:hover .dropbtn .icon-chevron-bottom{
+    fill:rgb(227, 227, 227) ;
+}
+main{
+    /* background-color: #3065e09b; */
+    background-image: linear-gradient(-230deg,rgba(100, 148, 220, 0.649),rgba(216, 225, 243, 0.808));
+    box-shadow:0px 0px 10px black  ;
+    position: relative;
+    /* z-index: -4; */
+
+}
+main .pictures{
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    height: 70vh;
+    background-image: url(images/Laboratory_Testing_-_Geotechpedia.webp);
+    /* background-color: aliceblue; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+main .blackbox{
+    position: relative;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.6;
+}
+main .toptext{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    opacity: 1;
+    font-size: 40px;
+    position: relative;
+    font-weight: 600;
+    color:  white;
+}
+.bigbox{
+    padding: 20px 0;
+}
+.smallbox{
+    max-width: 70vw;
+    background-color: white;
+    border-radius: 5px;
+    margin: auto;
+    width: 70vw;
+    /* height: 20vh; */
+    padding-top: 5px;
+    text-align: center;
+}
+.smallbox{
+    border: solid 2px ;
+    margin-bottom: 20px;
+}
+.smallbox .expname{
+    margin: auto;
+    width: 90%;
+    border-bottom: 2px solid #878686 ;
+}
+.smallbox .expname a{
+    font-weight: 500;
+    font-size: 25px;
+    display: block;
+    color: rgba(0, 46, 110, 0.834);
+    text-decoration: none;
+    font-family: Open Sans, Arial, sans-serif;
+    cursor: pointer;
+}
+.expinfo{
+    font-family: Open Sans, Arial, sans-serif;
+    padding-top: 20px;
+    padding: 20px 10px;
+    font-size: 17px;
+    color: #484747;
+    /* white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis; */
+}
+.readmore{
+    margin-bottom: 10px;
+}
+.readmore a{
+    font-family: Open Sans, Arial, sans-serif;
+    color: #17a2b8;   
+    
+}
+.smallbox .expname a:hover{
+    color: rgb(1, 1, 124);
+}
+@media only screen and (max-width: 500px) {
+    main .about{
+        max-width: 100vw;
+    }
+    .foot_logo img{
+        width: 100px;
+    }
+    .navcont{
+        max-width: 100vw;
+    }
+    .insti{
+        font-size: small;
+    }
+    .logo img{
+        height: 0px;
+    }
+    .dept{
+        display: none;
+    }
+    .insti_name{
+        display: none;
+    }
+    .foot_logo{
+        display: none;
+    }
+    main .pictures{
+        height: 50vh;
+    }
+}
